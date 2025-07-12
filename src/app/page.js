@@ -5,6 +5,15 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <h1>home</h1>
+      <User />
     </div>
   );
+}
+
+const User = ()=>{
+  return (
+    <div>
+      <h1>hello</h1>
+    </div>
+  )
 }
