@@ -1,14 +1,16 @@
 'use client'
+import { useState } from "react";
 import styles from "./page.module.css";
 
 export default function Home() {
-  const apple = (item)=>{
-    alert(item)
+  const [name, setName]= useState("Mustafa")
+  const apple = ()=>{
+    setName("Mustafa Ahsan")
   }
   return (
     <div className={styles.page}>
-      <h1>home</h1>
-      <button onClick={()=>apple("Fruit")}>Click Me</button>
+      <h1>{name}</h1>
+      <button onClick={apple}>Click Me</button>
     </div>
   );
 }
